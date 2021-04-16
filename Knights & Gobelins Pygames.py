@@ -29,39 +29,39 @@ class Joueur :
         ##Couleur
         #Jaune
         if self.color == 'jaune' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Pion Jaune.png')
+            pion = pygame.image.load('Pion/Pion Jaune.png')
             Screen.blit(pion,(self.x,self.y))
         #Bleu
         if self.color == 'bleu' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Pion Bleu.png')
+            pion = pygame.image.load('Pion/Pion Bleu.png')
             Screen.blit(pion,(self.x,self.y))
         #Vert
         if self.color == 'vert' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Pion Vert.png')
+            pion = pygame.image.load('Pion/Pion Vert.png')
             Screen.blit(pion,(self.x,self.y))
         #Violet
         if self.color == 'violet' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Pion Violet.png')
+            pion = pygame.image.load('Pion/Pion Violet.png')
             Screen.blit(pion,(self.x,self.y))
         ##Symbole
         #Shield
         if self.symbol == 'shield' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Shield.png')
+            pion = pygame.image.load('Pion/Shield.png')
             Screen.blit(pion,(self.x,self.y))
         #Wizard
         if self.symbol == 'wizard' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Wizard.png')
+            pion = pygame.image.load('Pion/Wizard.png')
             Screen.blit(pion,(self.x,self.y))
         #Sword
         if self.symbol == 'sword' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Sword.png')
+            pion = pygame.image.load('Pion/Sword.png')
             Screen.blit(pion,(self.x,self.y))
         #Bow
         if self.symbol == 'bow' :
-            pion = pygame.image.load('Ressources/Flat/Pion/Bow.png')
+            pion = pygame.image.load('Pion/Bow.png')
             Screen.blit(pion,(self.x,self.y))
         if self.symbol == 'dead' :
-            pion = pygame.image.load('Ressources/Flat/Pion/dead.png')
+            pion = pygame.image.load('Pion/dead.png')
             Screen.blit(pion,(self.x,self.y))
 
 
@@ -98,46 +98,46 @@ class Joueur :
                 self.avance = 0
 
     def battle(self,type_du_comba, joueur):
-        cadre = pygame.image.load('Ressources/Flat/HUD/comba/derrierplan.png')
+        cadre = pygame.image.load('HUD/comba/derrierplan.png')
         Screen.blit(cadre,(0,0))
         ##Mob
         if type_du_comba == 'mob' :
             monstre = randrange(0,101)
             if monstre <= 10 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/dbat.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/dbat.png')
                 Screen.blit(monstrei,(0,0))
             if 10 < monstre <= 20 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/drat.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/drat.png')
                 Screen.blit(monstrei,(0,0))
             if 20 < monstre <= 30 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/goblins.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/goblins.png')
                 Screen.blit(monstrei,(0,0))
             if 30 < monstre <= 40 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/kobold.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/kobold.png')
                 Screen.blit(monstrei,(0,0))
             if 40 < monstre <= 50 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/skeletton.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/skeletton.png')
                 Screen.blit(monstrei,(0,0))
             if 50 < monstre <= 60 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/slime.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/slime.png')
                 Screen.blit(monstrei,(0,0))
             if 60 < monstre <= 70 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/snake.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/snake.png')
                 Screen.blit(monstrei,(0,0))
             if 70 < monstre <= 80 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/dracoy.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/dracoy.png')
                 Screen.blit(monstrei,(0,0))
             if 80 < monstre <= 90 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/ghost.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/ghost.png')
                 Screen.blit(monstrei,(0,0))
             if 90 < monstre <= 100 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/monstre/grenouille.png')
+                monstrei = pygame.image.load('HUD/comba/monstre/grenouille.png')
                 Screen.blit(monstrei,(0,0))
             xzone = randint(50,820)
-            zone = pygame.image.load('Ressources/Flat/HUD/comba/zone mob.png')
+            zone = pygame.image.load('HUD/comba/zone mob.png')
             Screen.blit(zone,(xzone,0))
             xcurs = randint(50,940)
-            curseur = pygame.image.load('Ressources/Flat/HUD/comba/curseur.png')
+            curseur = pygame.image.load('HUD/comba/curseur.png')
             Screen.blit(curseur,(xcurs,0))
             clock.tick(120000)
             pygame.display.update()
@@ -173,7 +173,7 @@ class Joueur :
                                 pygame.display.update()
                                 comba_on = False
                             else :
-                                hit = pygame.image.load('Ressources/Flat/HUD/hit.png')
+                                hit = pygame.image.load('HUD/hit.png')
                                 joueur.pvactuel -= 10
                                 print (joueur.pvactuel)
                                 Screen.blit(hit,(0,0))
@@ -193,43 +193,43 @@ class Joueur :
         if type_du_comba == 'horde' :
             monstre = randrange(0,101)
             if monstre <= 12.5 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/hordebr.png')
+                monstrei = pygame.image.load('HUD/comba/horde/hordebr.png')
                 Screen.blit(monstrei,(0,0))
             if 12.5 < monstre <= 25 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/hordeg.png')
+                monstrei = pygame.image.load('HUD/comba/horde/hordeg.png')
                 Screen.blit(monstrei,(0,0))
             if 25 < monstre <= 37.5 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde snake.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde snake.png')
                 Screen.blit(monstrei,(0,0))
             if 37.5 < monstre <= 50 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde slime.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde slime.png')
                 Screen.blit(monstrei,(0,0))
             if 50 < monstre <= 62.5 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde skeletton.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde skeletton.png')
                 Screen.blit(monstrei,(0,0))
             if 62.5 < monstre <= 75 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde ghost.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde ghost.png')
                 Screen.blit(monstrei,(0,0))
             if 75 < monstre <= 87.5 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde frog.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde frog.png')
                 Screen.blit(monstrei,(0,0))
             if 87.5 < monstre <= 100 :
-                monstrei = pygame.image.load('Ressources/Flat/HUD/comba/horde/horde dracoy.png')
+                monstrei = pygame.image.load('HUD/comba/horde/horde dracoy.png')
                 Screen.blit(monstrei,(0,0))
             xzone1 = randint(50,820)
-            zone1 = pygame.image.load('Ressources/Flat/HUD/comba/zone mob.png')
+            zone1 = pygame.image.load('HUD/comba/zone mob.png')
             zone1p = True
             xzone2 = randint(50,820)
-            zone2 = pygame.image.load('Ressources/Flat/HUD/comba/zone mob.png')
+            zone2 = pygame.image.load('HUD/comba/zone mob.png')
             zone2p = True
             xzone3 = randint(50,820)
-            zone3 = pygame.image.load('Ressources/Flat/HUD/comba/zone mob.png')
+            zone3 = pygame.image.load('HUD/comba/zone mob.png')
             zone3p = True
             Screen.blit(zone1,(xzone1,0))
             Screen.blit(zone2,(xzone2,0))
             Screen.blit(zone3,(xzone3,0))
             xcurs = randint(50,940)
-            curseur = pygame.image.load('Ressources/Flat/HUD/comba/curseur.png')
+            curseur = pygame.image.load('HUD/comba/curseur.png')
             Screen.blit(curseur,(xcurs,0))
             clock.tick(120000)
             pygame.display.update()
@@ -277,7 +277,7 @@ class Joueur :
                                 clock.tick(120000)
                                 pygame.display.update()
                             else :
-                                hit = pygame.image.load('Ressources/Flat/HUD/hit.png')
+                                hit = pygame.image.load('HUD/hit.png')
                                 joueur.pvactuel -= 10
                                 print (joueur.pvactuel)
                                 Screen.blit(hit,(0,0))
@@ -311,23 +311,23 @@ class Case :
     def draw(self):
         #Plaine
         if self.biome == 'plaine' :
-            case = pygame.image.load('Ressources/Flat/Case/Plaine.png')
+            case = pygame.image.load('Case/Plaine.png')
             Screen.blit(case,(self.x,self.y))
         #Océan
         if self.biome == 'ocean' :
-            case = pygame.image.load('Ressources/Flat/Case/Ocean.png')
+            case = pygame.image.load('Case/Ocean.png')
             Screen.blit(case,(self.x,self.y))
         #Désert
         if self.biome == 'desert' :
-            case = pygame.image.load('Ressources/Flat/Case/Désert.png')
+            case = pygame.image.load('Case/Désert.png')
             Screen.blit(case,(self.x,self.y))
         #Neige
         if self.biome == 'neige' :
-            case = pygame.image.load('Ressources/Flat/Case/Snow.png')
+            case = pygame.image.load('Case/Snow.png')
             Screen.blit(case,(self.x,self.y))
         #Château
         if self.biome == 'chateau' :
-            case = pygame.image.load('Ressources/Flat/Case/Chateau.png')
+            case = pygame.image.load('Case/Chateau.png')
             Screen.blit(case,(self.x,self.y))
     def evenementset(self,numero_de_l_evenement):
         self.numero = numero_de_l_evenement
@@ -337,7 +337,7 @@ class Case :
         if self.numero <= 7 :
             print("sur Donjon")
             y = -800
-            g = pygame.image.load('Ressources/Flat/Donjon/Donjon 32.png')
+            g = pygame.image.load('Donjon/Donjon 32.png')
             Screen.blit(g,(0,y))
             for i in range (0,16) :
                 y += 50
@@ -390,7 +390,7 @@ class Case :
         ##Horde
         if 20 < self.numero <= 21 :
             print("sur Horde")
-            horde = pygame.image.load('Ressources/Flat/HUD/Event/horde.png')
+            horde = pygame.image.load('HUD/Event/horde.png')
             Screen.blit(horde,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -411,7 +411,7 @@ class Case :
         ##Trésor
         if 21 < self.numero <= 26 :
             print("sur Trésor")
-            tresor = pygame.image.load('Ressources/Flat/HUD/Event/drésor.png')
+            tresor = pygame.image.load('HUD/Event/drésor.png')
             Screen.blit(tresor,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -432,7 +432,7 @@ class Case :
         ##Monstre
         if 31 < self.numero <= 36 :
             print("sur Monstre")
-            monstre = pygame.image.load('Ressources/Flat/HUD/Event/monstre.png')
+            monstre = pygame.image.load('HUD/Event/monstre.png')
             Screen.blit(monstre,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -453,7 +453,7 @@ class Case :
         ##Foudre
         if 36 < self.numero <= 37 :
             print("sur Diathanael Foudre")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Foudre.png')
+            front = pygame.image.load('Diathanael/Foudre.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -471,7 +471,7 @@ class Case :
         ##Feu
         if 37 < self.numero <= 38 :
             print("sur Diathanael Feu")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Feu.png')
+            front = pygame.image.load('Diathanael/Feu.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -489,7 +489,7 @@ class Case :
         ##Eau
         if 38 < self.numero <= 39 :
             print("sur Diathanael Eau")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Eau.png')
+            front = pygame.image.load('Diathanael/Eau.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -507,7 +507,7 @@ class Case :
         ##Terre
         if 39 < self.numero <= 40 :
             print("sur Diathanael Terre")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Terre.png')
+            front = pygame.image.load('Diathanael/Terre.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -525,7 +525,7 @@ class Case :
         ##Air
         if 40 < self.numero <= 41 :
             print("sur Diathanael Air")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Air.png')
+            front = pygame.image.load('Diathanael/Air.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -543,7 +543,7 @@ class Case :
         ##Métal
         if 41 < self.numero <= 42 :
             print("sur Diathanael Métal")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Métal.png')
+            front = pygame.image.load('Diathanael/Métal.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -561,7 +561,7 @@ class Case :
         ##Ténebres
         if 42 < self.numero <= 43 :
             print("sur Diathanael Ténébres")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Ténébres.png')
+            front = pygame.image.load('Diathanael/Ténébres.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -582,7 +582,7 @@ class Case :
          ##Lumiéres
         if 43 < self.numero <= 44 :
             print("sur Diathanael Lumiéres")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Lumiére.png')
+            front = pygame.image.load('Diathanael/Lumiére.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -600,7 +600,7 @@ class Case :
         ##Poisse
         if 44 < self.numero <= 45 :
             print("sur Diathanael Poisse")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Poisse.png')
+            front = pygame.image.load('Diathanael/Poisse.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -618,7 +618,7 @@ class Case :
         ##Ether
         if 45 < self.numero <= 46 :
             print("sur Diathanael Ether")
-            front = pygame.image.load('Ressources/Flat/Diathanael/Ether.png')
+            front = pygame.image.load('Diathanael/Ether.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -641,12 +641,12 @@ class Rain(pygame.sprite.Sprite):
     def __init__(self):
         super(Rain, self).__init__()
         self.images = []
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 4.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 5.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 6.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 7.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 8.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Menu/Pluie/Pluie 9.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 4.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 5.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 6.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 7.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 8.png'))
+        self.images.append(pygame.image.load('Menu/Pluie/Pluie 9.png'))
         self.index = 0
         self.image = self.images[self.index]
         self.rect = pygame.Rect(5,5,150,198)
@@ -660,24 +660,24 @@ class Sanctuaire(pygame.sprite.Sprite):
     def __init__(self):
         super(Sanctuaire, self).__init__()
         self.images = []
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 1.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 2.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 3.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 4.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 5.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 6.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 7.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 8.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 9.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 10.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 11.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 12.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 13.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 14.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 15.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 16.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 17.png'))
-        self.images.append(pygame.image.load('Ressources/Flat/Sanctuaire/sword 18.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 1.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 2.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 3.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 4.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 5.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 6.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 7.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 8.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 9.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 10.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 11.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 12.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 13.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 14.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 15.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 16.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 17.png'))
+        self.images.append(pygame.image.load('Sanctuaire/sword 18.png'))
         self.index = 0
         self.image = self.images[self.index]
         self.rect = pygame.Rect(5,5,150,198)
@@ -690,7 +690,7 @@ class Sanctuaire(pygame.sprite.Sprite):
 ##Plateau
 def plateau(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4):
     ##BackGround
-    background = pygame.image.load('Ressources/Flat/Case/Background.png')
+    background = pygame.image.load('Case/Background.png')
     Screen.blit(background,(0,0))
     ##Plaine
     for i in range(1,2):
@@ -917,87 +917,87 @@ def plateau(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4):
     for i in range (1,32):
         if Liste_Case[i].numero <= 7 :
             #Donjon
-            event = pygame.image.load('Ressources/Flat/Case/Donjon.png')
+            event = pygame.image.load('Case/Donjon.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Donjon")
         if 7 < Liste_Case[i].numero <= 15 :
             #Village
-            event = pygame.image.load('Ressources/Flat/Case/Village.png')
+            event = pygame.image.load('Case/Village.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Village")
         if 15 < Liste_Case[i].numero <= 20 :
             #Sanctuaire
-            event = pygame.image.load('Ressources/Flat/Case/Sanctuaire.png')
+            event = pygame.image.load('Case/Sanctuaire.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Sanctuaire")
         if 20 < Liste_Case[i].numero <= 21 :
             #Horde
-            event = pygame.image.load('Ressources/Flat/Case/Surprise.png')
+            event = pygame.image.load('Case/Surprise.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Horde")
         if 21 < Liste_Case[i].numero <= 26 :
             #Trésor
-            event = pygame.image.load('Ressources/Flat/Case/Surprise.png')
+            event = pygame.image.load('Case/Surprise.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Trésor")
         if 26 < Liste_Case[i].numero <= 31 :
             #Marchand Itinérant
-            event = pygame.image.load('Ressources/Flat/Case/Marchand.png')
+            event = pygame.image.load('Case/Marchand.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Marchand Itinérant")
         if 31 < Liste_Case[i].numero <= 36 :
             #Monstre
-            event = pygame.image.load('Ressources/Flat/Case/Combat.png')
+            event = pygame.image.load('Case/Combat.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Monstre")
         if 36 < Liste_Case[i].numero <= 37 :
             #Foudre
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 37 < Liste_Case[i].numero <= 38 :
             #Feu
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 38 < Liste_Case[i].numero <= 39 :
             #Eau
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 39 < Liste_Case[i].numero <= 40 :
             #Terre
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 40 < Liste_Case[i].numero <= 41 :
             #Air
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 41 < Liste_Case[i].numero <= 42 :
             #Métal
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 42 < Liste_Case[i].numero <= 43 :
             #Ténebres
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 43 < Liste_Case[i].numero <= 44 :
             #Lumiéres
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 44 < Liste_Case[i].numero <= 45 :
             #Poisse
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 45 < Liste_Case[i].numero <= 46 :
             #Ether
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
             print("Diathanael")
         if 46 < Liste_Case[i].numero <= 100 :
@@ -1085,7 +1085,7 @@ def plateau(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4):
             Liste_Joueur.append(j4)
 def refresh_plateau() :
     ##BackGround
-    background = pygame.image.load('Ressources/Flat/Case/Background.png')
+    background = pygame.image.load('Case/Background.png')
     Screen.blit(background,(0,0))
     ##Case
     for i in range(len(Liste_Case)):
@@ -1094,71 +1094,71 @@ def refresh_plateau() :
     for i in range (1,32):
         if Liste_Case[i].numero <= 7 :
             #Donjon
-            event = pygame.image.load('Ressources/Flat/Case/Donjon.png')
+            event = pygame.image.load('Case/Donjon.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 7 < Liste_Case[i].numero <= 15 :
             #Village
-            event = pygame.image.load('Ressources/Flat/Case/Village.png')
+            event = pygame.image.load('Case/Village.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 15 < Liste_Case[i].numero <= 20 :
             #Sanctuaire
-            event = pygame.image.load('Ressources/Flat/Case/Sanctuaire.png')
+            event = pygame.image.load('Case/Sanctuaire.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 20 < Liste_Case[i].numero <= 21 :
             #Horde
-            event = pygame.image.load('Ressources/Flat/Case/Surprise.png')
+            event = pygame.image.load('Case/Surprise.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 21 < Liste_Case[i].numero <= 26 :
             #Trésor
-            event = pygame.image.load('Ressources/Flat/Case/Surprise.png')
+            event = pygame.image.load('Case/Surprise.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 26 < Liste_Case[i].numero <= 31 :
             #Marchand Itinérant
-            event = pygame.image.load('Ressources/Flat/Case/Marchand.png')
+            event = pygame.image.load('Case/Marchand.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 31 < Liste_Case[i].numero <= 36 :
             #Monstre
-            event = pygame.image.load('Ressources/Flat/Case/Combat.png')
+            event = pygame.image.load('Case/Combat.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 36 < Liste_Case[i].numero <= 37 :
             #Foudre
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 37 < Liste_Case[i].numero <= 38 :
             #Feu
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 38 < Liste_Case[i].numero <= 39 :
             #Eau
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 39 < Liste_Case[i].numero <= 40 :
             #Terre
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 40 < Liste_Case[i].numero <= 41 :
             #Air
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 41 < Liste_Case[i].numero <= 42 :
             #Métal
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 42 < Liste_Case[i].numero <= 43 :
             #Ténebres
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 43 < Liste_Case[i].numero <= 44 :
             #Lumiéres
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 44 < Liste_Case[i].numero <= 45 :
             #Poisse
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
         if 45 < Liste_Case[i].numero <= 46 :
             #Ether
-            event = pygame.image.load('Ressources/Flat/Case/Diathanael.png')
+            event = pygame.image.load('Case/Diathanael.png')
             Screen.blit(event,(Liste_Case[i].x,Liste_Case[i].y))
     ##Contour de Terrain
     pygame.draw.line(Screen,(0,0,0),(997,0),(997,800),5)
@@ -1173,7 +1173,7 @@ def refresh_plateau() :
     ##Pion
     for i in range (len(Liste_Joueur)):
         Liste_Joueur[i].pion()
-    Barre = pygame.image.load('Ressources/Flat/HUD/Barre.png')
+    Barre = pygame.image.load('HUD/Barre.png')
     Screen.blit(Barre,(0,0))
 ##Pratique
 def dice() :
@@ -1183,33 +1183,33 @@ def dice() :
 def Brigand(nb_joueur):
     YJ1 = 0
     YJ2 = 0
-    J1 = pygame.image.load('Ressources/Flat/mini/bandit/joueur/J1.png')
+    J1 = pygame.image.load('mini/bandit/joueur/J1.png')
     Screen.blit(J1,(0,YJ1))
-    J2 = pygame.image.load('Ressources/Flat/mini/bandit/joueur/J2.png')
+    J2 = pygame.image.load('mini/bandit/joueur/J2.png')
     Screen.blit(J2,(0,YJ2))
     Touche1J1 = False
     Touche2J1 = False
     Touche1J2 = False
     Touche2J2 = False
     if nb_joueur == 2 :
-        bg = pygame.image.load('Ressources/Flat/mini/bandit/background/backgroundJ2.png')
+        bg = pygame.image.load('mini/bandit/background/backgroundJ2.png')
         Screen.blit(bg,(0,0))
     elif nb_joueur == 3 :
-        bg = pygame.image.load('Ressources/Flat/mini/bandit/background/backgroundJ3.png')
+        bg = pygame.image.load('mini/bandit/background/backgroundJ3.png')
         Screen.blit(bg,(0,0))
         YJ3 = 0
-        J3 = pygame.image.load('Ressources/Flat/mini/bandit/joueur/J3.png')
+        J3 = pygame.image.load('mini/bandit/joueur/J3.png')
         Screen.blit(J3,(0,YJ3))
         Touche1J3 = False
         Touche2J3 = False
     elif nb_joueur == 4 :
-        bg = pygame.image.load('Ressources/Flat/mini/bandit/background/backgroundJ4.png')
+        bg = pygame.image.load('mini/bandit/background/backgroundJ4.png')
         Screen.blit(bg,(0,0))
         YJ3 = 0
-        J3 = pygame.image.load('Ressources/Flat/mini/bandit/joueur/J3.png')
+        J3 = pygame.image.load('mini/bandit/joueur/J3.png')
         Screen.blit(J3,(0,YJ3))
         YJ4 = 0
-        J4 = pygame.image.load('Ressources/Flat/mini/bandit/joueur/J4.png')
+        J4 = pygame.image.load('mini/bandit/joueur/J4.png')
         Screen.blit(J4,(0,YJ4))
         Touche1J3 = False
         Touche2J3 = False
@@ -1273,37 +1273,37 @@ def Brigand(nb_joueur):
                 Touche1J4 = False
                 Touche2J4 = False
         if Touche1J1 == True :
-            Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche1.png')
+            Touche = pygame.image.load('mini/bandit/touche/Touche1.png')
             Screen.blit(Touche,(0,0))
         if Touche2J1 == True :
-            Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche2.png')
+            Touche = pygame.image.load('mini/bandit/touche/Touche2.png')
             Screen.blit(Touche,(0,0))
         if Touche1J2 == True :
-            Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche1.png')
+            Touche = pygame.image.load('mini/bandit/touche/Touche1.png')
             Screen.blit(Touche,(270,0))
         if Touche2J2 == True :
-            Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche2.png')
+            Touche = pygame.image.load('mini/bandit/touche/Touche2.png')
             Screen.blit(Touche,(270,0))
         if nb_joueur >= 3 :
             if Touche1J3 == True :
-                Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche1.png')
+                Touche = pygame.image.load('mini/bandit/touche/Touche1.png')
                 Screen.blit(Touche,(503,0))
             if Touche2J3 == True :
-                Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche2.png')
+                Touche = pygame.image.load('mini/bandit/touche/Touche2.png')
                 Screen.blit(Touche,(503,0))
         if nb_joueur == 4 :
             if Touche1J4 == True :
-                Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche1.png')
+                Touche = pygame.image.load('mini/bandit/touche/Touche1.png')
                 Screen.blit(Touche,(772,0))
             if Touche2J4 == True :
-                Touche = pygame.image.load('Ressources/Flat/mini/bandit/touche/Touche2.png')
+                Touche = pygame.image.load('mini/bandit/touche/Touche2.png')
                 Screen.blit(Touche,(772,0))
         Screen.blit(J1,(0,YJ1))
         Screen.blit(J2,(0,YJ2))
         if nb_joueur >= 3 : Screen.blit(J3,(0,YJ3))
         if nb_joueur == 4 : Screen.blit(J4,(0,YJ4))
         if YJ1 == -720 :
-            Vic = pygame.image.load('Ressources/Flat/mini/bandit/vicJ1.png')
+            Vic = pygame.image.load('mini/bandit/vicJ1.png')
             Screen.blit(Vic,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1313,7 +1313,7 @@ def Brigand(nb_joueur):
             Liste_Joueur[0].pvactuel += 10
             game = False
         if YJ2 == -720 :
-            Vic = pygame.image.load('Ressources/Flat/mini/bandit/vicJ2.png')
+            Vic = pygame.image.load('mini/bandit/vicJ2.png')
             Screen.blit(Vic,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1323,7 +1323,7 @@ def Brigand(nb_joueur):
             Liste_Joueur[1].pvactuel += 10
             game = False
         if nb_joueur >= 3 and YJ3 == -720 :
-            Vic = pygame.image.load('Ressources/Flat/mini/bandit/vicJ3.png')
+            Vic = pygame.image.load('mini/bandit/vicJ3.png')
             Screen.blit(Vic,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1333,7 +1333,7 @@ def Brigand(nb_joueur):
             Liste_Joueur[2].pvactuel += 10
             game = False
         if nb_joueur == 4 and YJ4 == -720 :
-            Vic = pygame.image.load('Ressources/Flat/mini/bandit/vicJ4.png')
+            Vic = pygame.image.load('mini/bandit/vicJ4.png')
             Screen.blit(Vic,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1453,7 +1453,7 @@ def Spam(difficulté):
     timerref = time.time()
     clic = 0
     temps  = False
-    CaRi = pygame.image.load('Ressources/Flat/mini/spam/off.png')
+    CaRi = pygame.image.load('mini/spam/off.png')
     Screen.blit(CaRi,(0,0))
     clock.tick(120000)
     pygame.display.update()
@@ -1471,7 +1471,7 @@ def Spam(difficulté):
                 if 428 < x < 573 and 329 < y < 474 :
                     clic += 1
                     print(clic)
-                    CaRi = pygame.image.load('Ressources/Flat/mini/spam/on.png')
+                    CaRi = pygame.image.load('mini/spam/on.png')
                     Screen.blit(CaRi,(0,0))
                     if 0 <= clic <= 9 :
                         text = font.render(str(clic), True, (223, 232, 240))
@@ -1492,20 +1492,20 @@ def Spam(difficulté):
                     clock.tick(120000)
                     pygame.display.update()
         if objectif <= clic :
-            CaRi = pygame.image.load('Ressources/Flat/mini/spam/victoire.png')
+            CaRi = pygame.image.load('mini/spam/victoire.png')
             Screen.blit(CaRi,(0,0))
             clock.tick(120000)
             pygame.display.update()
             pygame.time.wait(3000)
             game = False
         if temps == True :
-            CaRi = pygame.image.load('Ressources/Flat/mini/spam/defaite.png')
+            CaRi = pygame.image.load('mini/spam/defaite.png')
             Screen.blit(CaRi,(0,0))
             clock.tick(120000)
             pygame.display.update()
             pygame.time.wait(3000)
             game = False
-        CaRi = pygame.image.load('Ressources/Flat/mini/spam/off.png')
+        CaRi = pygame.image.load('mini/spam/off.png')
         Screen.blit(CaRi,(0,0))
         if 0 <= clic <= 9 :
             text = font.render(str(clic), True, (223, 232, 240))
@@ -1534,10 +1534,10 @@ def Archer() :
     y2 = 0-randint(20,130)
     start = randint((0-1175),(0-575))
     start2 = randint((0-1350),(0-650))
-    bg = pygame.image.load('Ressources/Flat/mini/archer/bg.png')
-    target = pygame.image.load('Ressources/Flat/mini/archer/cible.png')
-    target2 = pygame.image.load('Ressources/Flat/mini/archer/cible 2.png')
-    fg = pygame.image.load('Ressources/Flat/mini/archer/fg.png')
+    bg = pygame.image.load('mini/archer/bg.png')
+    target = pygame.image.load('mini/archer/cible.png')
+    target2 = pygame.image.load('mini/archer/cible 2.png')
+    fg = pygame.image.load('mini/archer/fg.png')
     Screen.blit(target,(start,y))
     Screen.blit(target2,(start2,y2))
     Screen.blit(bg,(0,0))
@@ -1587,7 +1587,7 @@ def Archer() :
             Hit2 = False
         if start >= 600 or start2 >= 600 :
             print('PERDU')
-            t = pygame.image.load('Ressources/Flat/mini/archer/defaite.png')
+            t = pygame.image.load('mini/archer/defaite.png')
             Screen.blit(t,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1595,7 +1595,7 @@ def Archer() :
             game = False
         if (sec - int(timer - timerref))<= 0 :
             print('GAGNE')
-            t = pygame.image.load('Ressources/Flat/mini/archer/victoire.png')
+            t = pygame.image.load('mini/archer/victoire.png')
             Screen.blit(t,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -1629,7 +1629,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
             pygame.display.update()
             if action[0] == False  :
                 refresh_plateau()
-                HUDDébut = pygame.image.load('Ressources/Flat/HUD/J1 - Begin.png')
+                HUDDébut = pygame.image.load('HUD/J1 - Begin.png')
                 Screen.blit(HUDDébut,(0,0))
                 for event in pygame.event.get() :
                     if event.type == pygame.KEYDOWN :
@@ -1646,7 +1646,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                         actual_dice = dice()
                         if actual_dice == 1 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice1.png')
+                            dé =  pygame.image.load('Dice/dice1.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1656,7 +1656,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 2 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice2.png')
+                            dé =  pygame.image.load('Dice/dice2.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1666,7 +1666,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 3 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice3.png')
+                            dé =  pygame.image.load('Dice/dice3.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1676,7 +1676,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 4 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice4.png')
+                            dé =  pygame.image.load('Dice/dice4.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1686,7 +1686,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 5 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice5.png')
+                            dé =  pygame.image.load('Dice/dice5.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1696,7 +1696,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 6 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice6.png')
+                            dé =  pygame.image.load('Dice/dice6.png')
                             Liste_Joueur[0].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1705,7 +1705,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                                     Liste_Case[i].evenementactive(Liste_Joueur[0],Liste_Case)
                             action[1] = True
                     if Liste_Joueur[currentplayer - 1].mort == True :
-                         skull =  pygame.image.load('Ressources/Flat/HUD/skull.png')
+                         skull =  pygame.image.load('HUD/skull.png')
                          Screen.blit(skull,(0,0))
                          pygame.display.update()
                     if event.key == pygame.K_w :
@@ -1719,7 +1719,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
             pygame.display.update()
             if action[0] == False :
                 refresh_plateau()
-                HUDDébut = pygame.image.load('Ressources/Flat/HUD/J2 - Begin.png')
+                HUDDébut = pygame.image.load('HUD/J2 - Begin.png')
                 Screen.blit(HUDDébut,(0,0))
                 for event in pygame.event.get() :
                     if event.type == pygame.KEYDOWN :
@@ -1732,7 +1732,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                         actual_dice = dice()
                         if actual_dice == 1 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice1.png')
+                            dé =  pygame.image.load('Dice/dice1.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1742,7 +1742,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 2 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice2.png')
+                            dé =  pygame.image.load('Dice/dice2.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1752,7 +1752,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 3 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice3.png')
+                            dé =  pygame.image.load('Dice/dice3.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1762,7 +1762,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 4 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice4.png')
+                            dé =  pygame.image.load('Dice/dice4.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1772,7 +1772,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 5 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice5.png')
+                            dé =  pygame.image.load('Dice/dice5.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1782,7 +1782,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 6 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice6.png')
+                            dé =  pygame.image.load('Dice/dice6.png')
                             Liste_Joueur[1].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1791,7 +1791,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                                     Liste_Case[i].evenementactive(Liste_Joueur[1],Liste_Case)
                             action[1] = True
                     if Liste_Joueur[currentplayer - 1].mort == True :
-                         skull =  pygame.image.load('Ressources/Flat/HUD/skull.png')
+                         skull =  pygame.image.load('HUD/skull.png')
                          Screen.blit(skull,(0,0))
                          pygame.display.update()
                     if event.key == pygame.K_w :
@@ -1805,7 +1805,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
             pygame.display.update()
             if action[0] == False :
                 refresh_plateau()
-                HUDDébut = pygame.image.load('Ressources/Flat/HUD/J3 - Begin.png')
+                HUDDébut = pygame.image.load('HUD/J3 - Begin.png')
                 Screen.blit(HUDDébut,(0,0))
                 for event in pygame.event.get() :
                     if event.type == pygame.KEYDOWN :
@@ -1818,7 +1818,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                         actual_dice = dice()
                         if actual_dice == 1 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice1.png')
+                            dé =  pygame.image.load('Dice/dice1.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1828,7 +1828,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 2 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice2.png')
+                            dé =  pygame.image.load('Dice/dice2.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1838,7 +1838,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 3 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice3.png')
+                            dé =  pygame.image.load('Dice/dice3.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1848,7 +1848,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 4 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice4.png')
+                            dé =  pygame.image.load('Dice/dice4.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1858,7 +1858,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 5 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice5.png')
+                            dé =  pygame.image.load('Dice/dice5.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1868,7 +1868,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 6 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice6.png')
+                            dé =  pygame.image.load('Dice/dice6.png')
                             Liste_Joueur[2].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1877,7 +1877,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                                     Liste_Case[i].evenementactive(Liste_Joueur[2],Liste_Case)
                             action[1] = True
                     if Liste_Joueur[currentplayer - 1].mort == True :
-                         skull =  pygame.image.load('Ressources/Flat/HUD/skull.png')
+                         skull =  pygame.image.load('HUD/skull.png')
                          Screen.blit(skull,(0,0))
                          pygame.display.update()
                     if event.key == pygame.K_w :
@@ -1891,7 +1891,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
             pygame.display.update()
             if action[0] == False :
                 refresh_plateau()
-                HUDDébut = pygame.image.load('Ressources/Flat/HUD/J4 - Begin.png')
+                HUDDébut = pygame.image.load('HUD/J4 - Begin.png')
                 Screen.blit(HUDDébut,(0,0))
                 for event in pygame.event.get() :
                     if event.type == pygame.KEYDOWN :
@@ -1904,7 +1904,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                         actual_dice = dice()
                         if actual_dice == 1 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice1.png')
+                            dé =  pygame.image.load('Dice/dice1.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1914,7 +1914,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 2 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice2.png')
+                            dé =  pygame.image.load('Dice/dice2.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1924,7 +1924,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 3 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice3.png')
+                            dé =  pygame.image.load('Dice/dice3.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1934,7 +1934,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 4 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice4.png')
+                            dé =  pygame.image.load('Dice/dice4.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1944,7 +1944,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                         if actual_dice == 5 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice5.png')
+                            dé =  pygame.image.load('Dice/dice5.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1955,7 +1955,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             pygame.display.update()
                         if actual_dice == 6 and action[1]  == False :
                             refresh_plateau()
-                            dé =  pygame.image.load('Ressources/Flat/Dice/dice6.png')
+                            dé =  pygame.image.load('Dice/dice6.png')
                             Liste_Joueur[3].move(Liste_Case,actual_dice)
                             refresh_plateau()
                             Screen.blit(dé,(0,0))
@@ -1965,7 +1965,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             action[1] = True
                             pygame.display.update()
                     if Liste_Joueur[currentplayer - 1].mort == True :
-                         skull =  pygame.image.load('Ressources/Flat/HUD/skull.png')
+                         skull =  pygame.image.load('HUD/skull.png')
                          Screen.blit(skull,(0,0))
                          pygame.display.update()
                     if event.key == pygame.K_w :
@@ -1976,57 +1976,57 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                         action[1] = False
         if nb_joueur == 2 :
             if Liste_Joueur[0].mort == True :
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J2 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J2 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True :
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J1 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J1 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
         if nb_joueur == 3 :
             if Liste_Joueur[0].mort == True and Liste_Joueur[2].mort == True :
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J2 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J2 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True and Liste_Joueur[2].mort == True :
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J1 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J1 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True and Liste_Joueur[0].mort == True :
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J3 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J3 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
         if nb_joueur == 4 :
             if Liste_Joueur[0].mort == True and Liste_Joueur[2].mort == True and Liste_Joueur[3].mort == True:
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J2 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J2 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True and Liste_Joueur[2].mort == True and Liste_Joueur[3].mort == True:
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J1 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J1 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True and Liste_Joueur[0].mort == True and Liste_Joueur[3].mort == True:
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J3 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J3 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
                 GameExit = True
             if Liste_Joueur[1].mort == True and Liste_Joueur[0].mort == True and Liste_Joueur[2].mort == True:
-                skull =  pygame.image.load('Ressources/Flat/HUD/Boss Battle - J4 Win.png')
+                skull =  pygame.image.load('HUD/Boss Battle - J4 Win.png')
                 Screen.blit(skull,(0,0))
                 pygame.display.update()
                 pygame.time.wait(3000)
@@ -2141,70 +2141,70 @@ def selec_joueur(Liste_Case,nb_joueur,symbolJ1 , symbolJ2, symbolJ3 , symbolJ4) 
                         symbolJ4 += 1
         #Affichage Mode
         if nb_joueur == 2 :
-            BackgroundSelecJoueur = pygame.image.load('Ressources/Flat/Menu/Séléction/Mode 2J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 2J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
         if nb_joueur == 3 :
-            BackgroundSelecJoueur = pygame.image.load('Ressources/Flat/Menu/Séléction/Mode 3J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 3J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
         if nb_joueur == 4 :
-            BackgroundSelecJoueur = pygame.image.load('Ressources/Flat/Menu/Séléction/Mode 4J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 4J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
     #Affichage Pion
         #J1
         if symbolJ1 == 1 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Jaune Shield.png')
+            pion = pygame.image.load('Pion/Jaune Shield.png')
             Screen.blit(pion,(185,269))
         if symbolJ1 == 2 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Jaune Bow.png')
+            pion = pygame.image.load('Pion/Jaune Bow.png')
             Screen.blit(pion,(185,269))
         if symbolJ1 == 3 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Jaune Sword.png')
+            pion = pygame.image.load('Pion/Jaune Sword.png')
             Screen.blit(pion,(185,269))
         if symbolJ1 == 4 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Jaune Wizard.png')
+            pion = pygame.image.load('Pion/Jaune Wizard.png')
             Screen.blit(pion,(185,269))
         #J2
         if symbolJ2 == 1 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Bleu Shield.png')
+            pion = pygame.image.load('Pion/Bleu Shield.png')
             Screen.blit(pion,(185,353))
         if symbolJ2 == 2 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Bleu Bow.png')
+            pion = pygame.image.load('Pion/Bleu Bow.png')
             Screen.blit(pion,(185,353))
         if symbolJ2 == 3 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Bleu Sword.png')
+            pion = pygame.image.load('Pion/Bleu Sword.png')
             Screen.blit(pion,(185,353))
         if symbolJ2 == 4 :
-            pion = pygame.image.load('Ressources/Flat/Pion/Bleu Wizard.png')
+            pion = pygame.image.load('Pion/Bleu Wizard.png')
             Screen.blit(pion,(185,353))
         #J3
         if nb_joueur >= 3 :
             if symbolJ3 == 1 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Violet Shield.png')
+                pion = pygame.image.load('Pion/Violet Shield.png')
                 Screen.blit(pion,(185,423))
             if symbolJ3 == 2 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Violet Bow.png')
+                pion = pygame.image.load('Pion/Violet Bow.png')
                 Screen.blit(pion,(185,423))
             if symbolJ3 == 3 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Violet Sword.png')
+                pion = pygame.image.load('Pion/Violet Sword.png')
                 Screen.blit(pion,(185,423))
             if symbolJ3 == 4 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Violet Wizard.png')
+                pion = pygame.image.load('Pion/Violet Wizard.png')
                 Screen.blit(pion,(185,423))
         #J4
         if nb_joueur == 4 :
             if symbolJ4 == 1 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Vert Shield.png')
+                pion = pygame.image.load('Pion/Vert Shield.png')
                 Screen.blit(pion,(185,490))
             if symbolJ4 == 2 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Vert Bow.png')
+                pion = pygame.image.load('Pion/Vert Bow.png')
                 Screen.blit(pion,(185,490))
             if symbolJ4 == 3 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Vert Sword.png')
+                pion = pygame.image.load('Pion/Vert Sword.png')
                 Screen.blit(pion,(185,490))
             if symbolJ4 == 4 :
-                pion = pygame.image.load('Ressources/Flat/Pion/Vert Wizard.png')
+                pion = pygame.image.load('Pion/Vert Wizard.png')
                 Screen.blit(pion,(185,490))
-        next = pygame.image.load('Ressources/Flat/Menu/Séléction/Appuyer sur Espace.png')
+        next = pygame.image.load('Menu/Séléction/Appuyer sur Espace.png')
         Screen.blit(next,(0,0))
         clock.tick(120000)
         pygame.display.update()
@@ -2251,13 +2251,13 @@ def menu(Liste_Case) :
                     print('Régles')
                     selec_joueur(Liste_Case, nb_joueur,symbolJ1 , symbolJ2, symbolJ3 , symbolJ4)
                     MenuAnim = True
-        TitleBackground = pygame.image.load("Ressources/Flat/Menu/Title Screen - Background.png")
+        TitleBackground = pygame.image.load("Menu/Title Screen - Background.png")
         Screen.blit(TitleBackground,(0,0))
         groupe_de_pluie.update()
         groupe_de_pluie.draw(Screen)
-        Buttons = pygame.image.load('Ressources/Flat/Menu/Title Screen - Buttons.png')
+        Buttons = pygame.image.load('Menu/Title Screen - Buttons.png')
         Screen.blit(Buttons,(0,0))
-        Title = pygame.image.load('Ressources/Flat/Menu/Title Screen - Title.png')
+        Title = pygame.image.load('Menu/Title Screen - Title.png')
         Screen.blit(Title,(0,0))
         clock.tick(120000)
         pygame.display.update()
