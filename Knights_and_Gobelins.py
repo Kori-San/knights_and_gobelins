@@ -319,7 +319,7 @@ class Case :
             Screen.blit(case,(self.x,self.y))
         #Desert
         if self.biome == 'desert' :
-            case = pygame.image.load('Case/Désert.png')
+            case = pygame.image.load('Case/Desert.png')
             Screen.blit(case,(self.x,self.y))
         #Neige
         if self.biome == 'neige' :
@@ -411,7 +411,7 @@ class Case :
         ##Tresor
         if 21 < self.numero <= 26 :
             print("sur Tresor")
-            tresor = pygame.image.load('HUD/Event/drésor.png')
+            tresor = pygame.image.load('HUD/Event/dresor.png')
             Screen.blit(tresor,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -543,7 +543,7 @@ class Case :
         ##Metal
         if 41 < self.numero <= 42 :
             print("sur Diathanael Metal")
-            front = pygame.image.load('Diathanael/Métal.png')
+            front = pygame.image.load('Diathanael/Metal.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -561,7 +561,7 @@ class Case :
         ##Tenebres
         if 42 < self.numero <= 43 :
             print("sur Diathanael Tenebres")
-            front = pygame.image.load('Diathanael/Ténébres.png')
+            front = pygame.image.load('Diathanael/Tenebres.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -582,7 +582,7 @@ class Case :
          ##Lumieres
         if 43 < self.numero <= 44 :
             print("sur Diathanael Lumieres")
-            front = pygame.image.load('Diathanael/Lumiére.png')
+            front = pygame.image.load('Diathanael/Lumiere.png')
             Screen.blit(front,(0,0))
             clock.tick(120000)
             pygame.display.update()
@@ -2141,13 +2141,13 @@ def selec_joueur(Liste_Case,nb_joueur,symbolJ1 , symbolJ2, symbolJ3 , symbolJ4) 
                         symbolJ4 += 1
         #Affichage Mode
         if nb_joueur == 2 :
-            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 2J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Selection/Mode 2J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
         if nb_joueur == 3 :
-            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 3J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Selection/Mode 3J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
         if nb_joueur == 4 :
-            BackgroundSelecJoueur = pygame.image.load('Menu/Séléction/Mode 4J.png')
+            BackgroundSelecJoueur = pygame.image.load('Menu/Selection/Mode 4J.png')
             Screen.blit(BackgroundSelecJoueur,(0,0))
     #Affichage Pion
         #J1
@@ -2204,7 +2204,7 @@ def selec_joueur(Liste_Case,nb_joueur,symbolJ1 , symbolJ2, symbolJ3 , symbolJ4) 
             if symbolJ4 == 4 :
                 pion = pygame.image.load('Pion/Vert Wizard.png')
                 Screen.blit(pion,(185,490))
-        next = pygame.image.load('Menu/Séléction/Appuyer sur Espace.png')
+        next = pygame.image.load('Menu/Selection/Appuyer sur Espace.png')
         Screen.blit(next,(0,0))
         clock.tick(120000)
         pygame.display.update()
