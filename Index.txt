@@ -1,0 +1,22 @@
+##Diathanael
+
+DEau = Heal 10 pv B
+DAir = Pousse 2 cases B
+DTerre = root 2 tour M
+DFeu = Dégats 10 pv M
+DMétal = amélioration gratos B
+DFoudre = - 5 pv 100% stun - 10% avec chaque affliction M
+DLumiére = Rajoute 10 pv max B
+DPoisse = Dot 3 pv 3 tour M
+DTénébres = Téléport 2 cases avant 
+DEther = Tout avant + 5 pts dans stats aléa 
+
+##Stats
+self.stats[0] #PV Max
+self.stats[1] #PV Actuel
+self.stats[2] #Atk
+self.stats[3] #Déf
+self.stats[4] #Stun / Root [Etat]
+
+##Inventaire
+
