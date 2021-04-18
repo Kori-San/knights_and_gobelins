@@ -1,5 +1,6 @@
 # Knights and Gobelins
 ### A Tabletop game on Python
+### French Trailer of K&G v0.1 : https://www.youtube.com/watch?v=xzCmgxNOjls
 
 # Installation
 Knights and Gobelins is a Tabletop game that I've developed for my French Baccalaureate (High School Diploma).
@@ -13,7 +14,8 @@ K&G will need you to install pygame _https://www.pygame.org/wiki/GettingStarted_
 - `sudo python -m pip install -U pygame`
 
 #### _You can check you python version by using python --version_
-#### _You can run K&G by using Python Launcher or by using the command line python ./<The_Path_Of_Knights_and_Gobelins.py>_
+#### _You can run K&G by using Python Launcher or by using the command line :_ 
+_`python ./<The_Path_Of_Knights_and_Gobelins.py>`_
 
 # Features
 ### Play from 2 to 4 players !
