@@ -49,3 +49,5 @@ _`python ./<The_Path_Of_Knights_and_Gobelins.py>`_
 - Add useless wait to know what if statement are empty
 
 #### *Made by Kori-San 2019 / All artworks are either free for non-commercial uses or created by myself*
+### If you find any bug or if you have ideas to make the script better don't mind writting in the "Issues" section :)
+
