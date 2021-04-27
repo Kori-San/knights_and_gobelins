@@ -6,6 +6,7 @@ from random import *
 import math
 import os
 import collections
+import sys
 
 ##Classe
 class Joueur :
@@ -1183,6 +1184,9 @@ def refresh_plateau() :
 def dice() :
     result = randrange(0,7)
     return result
+def close_window() :
+    pygame.quit()
+    sys.exit()
 ##Mini-Jeux
 def Brigand(nb_joueur):
     YJ1 = 0
@@ -1225,7 +1229,7 @@ def Brigand(nb_joueur):
     while game == True :
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                game = False
+                close_window()
             event = pygame.event.wait()
             if event.type == KEYDOWN :
                 keymap[event.scancode] = event.unicode
@@ -1398,8 +1402,7 @@ def Cowboy():
     while J1_Push == False and J2_Push == False :
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                J1_Push = True
-                J2_Push = True
+                close_window()
             event = pygame.event.wait()
             if event.type == KEYDOWN :
                 keymap[event.scancode] = event.unicode
@@ -1475,7 +1478,7 @@ def Spam(difficulte):
             temps = True
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                temps = True
+                close_window()
             if event.type == pygame.MOUSEBUTTONDOWN :
                 x,y = pygame.mouse.get_pos()
                 if 428 < x < 573 and 329 < y < 474 :
@@ -1573,7 +1576,7 @@ def Archer() :
         HitBox2Y = (y2+357)
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                game = False
+                close_window()
             if event.type == pygame.MOUSEBUTTONDOWN :
                 h,v = pygame.mouse.get_pos()
                 h2,v2 = pygame.mouse.get_pos()
@@ -1629,7 +1632,7 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
     while not GameExit :
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                GameExit = True
+                close_window()
         for i in range(0,len(Liste_Joueur)):
             if Liste_Joueur[i].pvactuel <= 0 :
                 Liste_Joueur[i].mort = True
@@ -1647,10 +1650,10 @@ def gameloop(Liste_Case, nb_joueur, symbolJ1 , symbolJ2, symbolJ3 , symbolJ4,cur
                             refresh_plateau()
                             action[0] = True
                     if event.type == pygame.QUIT:
-                        GameExit = True
+                        close_window()
             if action[0] == True :
                 if event.type == pygame.QUIT:
-                     GameExit = True
+                     close_window()
                 event = pygame.event.wait()
                 if event.type == KEYDOWN :
                     keymap[event.scancode] = event.unicode
@@ -2058,7 +2061,7 @@ def selec_joueur(Liste_Case,nb_joueur,symbolJ1 , symbolJ2, symbolJ3 , symbolJ4) 
     while not SelecMenu :
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                SelecMenu = True
+                close_window()
             if event.type == KEYDOWN :
                 if event.key == pygame.K_SPACE:
                    #print('Jouer')
@@ -2235,7 +2238,7 @@ def menu(Liste_Case) :
     while not MenuAnim :
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
-                MenuAnim = True
+                close_window()
             ##Jouer
             if event.type == KEYDOWN :
                 if event.key == pygame.K_SPACE:
