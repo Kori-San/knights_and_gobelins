@@ -13,7 +13,7 @@ K&G will need you to install pygame _https://www.pygame.org/wiki/GettingStarted_
 - `sudo python get-pip.py `
 - `sudo python -m pip install -U pygame`
 
-#### _You can check you python version by using python --version_
+#### _You can check your python version by using python --version_
 #### _You can run K&G by using Python Launcher or by using the command line :_ 
 _`python ./<The_Path_Of_Knights_and_Gobelins.py>`_
 
@@ -32,7 +32,7 @@ _`python ./<The_Path_Of_Knights_and_Gobelins.py>`_
 - Training for the league ! _(Solo)_ : Click on the button as much as you can to try to win !
 
 # Mind that ... !
-### The game is still in progress, those are the features that i want to implent in a near future :
+### The game is still in progress, those are the features that I want to implent in a near future :
 - Add the Backpack and Merchants feature.
 - Add alternatives map styles with new biomes and new dispositions.
 - Add Options tab on the menu and improve global performance of the game to have a static Framerate (or something close to static).
