@@ -39,7 +39,7 @@ _`python ./<The_Path_Of_Knights_and_Gobelins.py>`_
 - Add a Piano Solo Mini-game where a melody is played by the computer and the player will need to play it again !
 - Add Boss related events such as a portal that leads to the final boss "Steele".
 - Add several Multiplayer Mini-games specificly for 3 and 4 players.
-- Since the game is only avaible in french for now, and so is all the script, I'll try to update it later to make more "Worldwide".
+- Since the game is only avaible in french for now, and so is all the script, I'll try to update it later to make it more "Worldwide".
 
 ### v0.2 Fix :
 - Fix a bug that made key press not recognized on Mac OSX
