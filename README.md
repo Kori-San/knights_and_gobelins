@@ -6,11 +6,10 @@
 Knights and Gobelins is a Tabletop game that I've developed for my French Baccalaureate (High School Diploma).
 K&G will need you to install pygame _https://www.pygame.org/wiki/GettingStarted_ by using pip _https://pip.pypa.io/en/stable/installing/_
 
-### If you are using Python 2.6 you can follow the instructions bellow to install pip and pygame :
+### If you are using a UNIX system you can follow the instructions bellow to install pip and pygame :
 
 - `cd ~/Desktop/ `
-- `curl https://bootstrap.pypa.io/2.6/get-pip.py -o get-pip.py `
-- `sudo python get-pip.py `
+- `sudo apt install pip -y` or `sudo yum install pip -y` depending on your package manager
 - `sudo python -m pip install -U pygame`
 
 #### _You can check your python version by using python --version_
